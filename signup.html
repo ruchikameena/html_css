@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body{   
+            background: linear-gradient(90deg, rgba(92,92,163,1) 35%, rgba(0,212,255,1) 100%);
+        }
+
+        .register-form{
+
+            width: 35%;
+            margin:auto;
+            padding: 10px;
+            box-shadow: 0px 0px 80px rgb(75, 69, 69);
+            margin-top: 50px;
+            border-radius: 8px;
+            min-width: 400px;
+            max-width: 1115px;
+            background-color: rgb(248, 246, 246);
+        }
+
+        h1{
+            text-align: center;
+            border-bottom: 1px solid black;
+            padding: 10px;
+            color: rgb(21, 110, 184);
+        }
+
+        input{
+
+            width: 88%;
+            padding: 10px;
+            margin: 10px 0px;
+            border-color: rgb(177, 26, 26);
+            background-color: rgb(166, 202, 233);
+        }
+
+        label{
+            color: rgb(21, 110, 184);
+            font-size: large;
+        }
+
+        #btn{
+
+            background-color: rgb(26, 137, 202);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            width: 100px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        form{
+
+            margin: 10px 0px;
+        }
+
+        i{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="register-form">
+        <h1>Signup</h1>
+        <form action="">
+            <div class="username">
+                <label for="">Username:</label> <br>
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Enter your username" >
+                
+            </div>
+            <div class="email">
+                <label for="">Email:</label> <br>
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Enter your email">
+            </div>
+            <div class="mobile">
+                <label for="">Moblie:</label> <br>
+                <i class="fa-solid fa-phone"></i>
+                <input type="number" placeholder="Enter your mobile no">
+            </div>
+            <div class="password">
+                <label for="">Password:</label> <br>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password"  placeholder="Enter your password">
+            </div>
+            <div >
+                <input type="submit" id="btn">
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
